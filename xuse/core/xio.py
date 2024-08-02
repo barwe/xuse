@@ -39,6 +39,6 @@ def write_text(text: str, dest_file: str, mode=None):
         f.write(text)
 
     if mode:
-        from more.shell import run
+        from xuse.more.shell import run
 
         run(f"chmod {mode} {dest_file}")

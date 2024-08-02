@@ -11,5 +11,36 @@
   "black-formatter.args": ["--line-length", "200"],
   "files.exclude": {
     "*.egg-info": true
+  },
+  "workbench.colorCustomizations": {
+    "terminal.background": "#181818",
+    "terminal.foreground": "#78eb8b",
+    "terminalCursor.background": "#D8D8D8",
+    "terminalCursor.foreground": "#D8D8D8",
+    "terminal.ansiBlack": "#181818",
+    "terminal.ansiBlue": "#7CAFC2",
+    "terminal.ansiBrightBlack": "#585858",
+    "terminal.ansiBrightBlue": "#7CAFC2",
+    "terminal.ansiBrightCyan": "#86C1B9",
+    "terminal.ansiBrightGreen": "#A1B56C",
+    "terminal.ansiBrightMagenta": "#BA8BAF",
+    "terminal.ansiBrightRed": "#AB4642",
+    "terminal.ansiBrightWhite": "#F8F8F8",
+    "terminal.ansiBrightYellow": "#F7CA88",
+    "terminal.ansiCyan": "#86C1B9",
+    "terminal.ansiGreen": "#A1B56C",
+    "terminal.ansiMagenta": "#BA8BAF",
+    "terminal.ansiRed": "#AB4642",
+    "terminal.ansiWhite": "#D8D8D8",
+    "terminal.ansiYellow": "#F7CA88",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.lineHeight": 1.6,
+    "terminal.integrated.letterSpacing": 0.1,
+    "terminal.integrated.fontSize": 30,
+    "terminal.integrated.fontFamily": "Lucida Console",
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "activityBar.background": "#28118A",
+    "titleBar.activeBackground": "#3817C2",
+    "titleBar.activeForeground": "#FCFCFF"
   }
 }

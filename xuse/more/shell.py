@@ -18,7 +18,7 @@ def _run_on_linux(command: str, sudo: str = None, local_lang: bool = False) -> s
         else:
             command3 = f"echo '{sudo}' | sudo -S -p '' {command2}"
 
-    logger.debug(f"shell.run\n# Origion: {command}\n# Actual: {command3}")
+    logger.debug(f"xuse.more.shell.run: {command3}")
 
     proc = subprocess.run(command3, shell=True, capture_output=True, encoding="utf-8")
     if proc.returncode == 0:

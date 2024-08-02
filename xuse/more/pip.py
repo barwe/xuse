@@ -53,11 +53,14 @@ def install_package(installed: str, imported: Union[str, Callable[[], bool]] = N
         imported = installed
 
     # 导入测试是一个函数时，仅当函数执行结果为 True 时执行安装
-    if callable(imported) and imported():
-        return _install_package(installed, index_url=index_url)
-
+    if callable(imported):
+        if imported():
+            return _install_package(installed, index_url=index_url)
+        else:
+            return ReturnData(-1, "this package is already installed")
     # 导入测试是一个字符串，尝试 import 该模块
-    if is_package_installed(imported):
-        return ReturnData(-1, "this package is already installed")
-
-    return _install_package(installed, imported=imported, index_url=index_url)
+    else:
+        if is_package_installed(imported):
+            return ReturnData(-1, "this package is already installed")
+        else:
+            return _install_package(installed, imported=imported, index_url=index_url)

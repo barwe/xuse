@@ -52,4 +52,5 @@ def decompress_auto(src_file: str, dest_dir: str, shell=False):
         decompress_gzip(src_file, dest_dir, shell=shell)
     elif src_file.endswith(".zip"):
         decompress_zip(src_file, dest_dir, shell=shell)
-    raise NotImplementedError(f"decompress for {src_file}")
+    else:
+        raise NotImplementedError(f"decompress for {src_file}")

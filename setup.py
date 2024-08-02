@@ -5,7 +5,7 @@ from setuptools import find_packages
 
 setup(
     name="xuse",
-    version="0.2",
+    version="0.3",
     author="barwe",
     author_email="barwechin@163.com",
     url="",
