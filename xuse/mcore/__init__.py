@@ -1,4 +1,4 @@
-from . import dict as di
-from . import list as li
 from . import dtype as dt
-from . import random as rd
+from . import _dict as di
+from . import _list as li
+from . import _random as rd
