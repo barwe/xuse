@@ -1,0 +1,4 @@
+#!/bin/bash
+version=$1
+python setup.py sdist
+pip install dist/xuse-$version.tar.gz --force-reinstall
